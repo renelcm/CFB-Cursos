@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CFB Cursos - Javascript</title>
+        <meta charset="UTF-8">
+
+        <!--Tratamento de erros / try, catch, finally-->
+
+        <script>
+
+         var num; //Maximo 10
+
+         try{
+            num=prompt("Digite um valor");
+            if(num>10){
+                throw new Error("Valor Inválido, o valor máximo é 10");
+            }
+         }catch(e){
+             console.log("ERRO: " + e.message);
+             num=10;
+         }finally{
+             document.write("Valor: "+num);
+         }
+
+        </script>
+
+    </head>
+    <body>
+    
+
+    </body>
+</html>
