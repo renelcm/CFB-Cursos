@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CFB Cursos - Javascript</title>
+        <meta charset="UTF-8">
+
+        <!--Manipulando Forms com Javascript-->
+
+        <style>
+            label{
+                display: block;
+            }
+            input{
+                display: block;
+            }
+            input[type=submit],label{
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <form name="curso1" id="curso1" action="#" method="post">
+            <label>Nome</label>
+            <input type="text" name="fNome" id="teste" value="Primeiro - 1">
+            <label>Senha</label>
+            <input type="password" name="fSenha" id="teste" value="123">
+            <input type="submit" name="btEnviar" id="teste" value="Enviar">
+        </form>
+        <!--<form name="curso2" id="curso2" action="#" method="post">
+            <label>Nome</label>
+            <input type="text" name="fNome" id="teste" value="Segundo - 2">
+            <label>Senha</label>
+            <input type="password" name="fSenha" id="teste" value="123">
+            <input type="submit" name="btEnviar" id="teste" value="Enviar">
+        </form>-->
+
+        <hr>
+
+        <script>
+
+            document.write(document.getElementById("curso1").elements[0].value)
+            
+            var fm=document.forms[0];
+            var el=fm.elements;
+
+            for(var i=0;i<el.length-1;i++){
+                el[i].style.backgroundColor="#ddd";
+                //el[i].value="CFBCursos";
+            }
+
+            
+                       //Formas de apontar o formulário
+            //var fm=document.forms.item(0).id;
+            //var fm=document.forms.namedItem("curso2").innerHTML;
+            //document.write(fm);
+
+        </script>
+
+    </body>
+</html>
