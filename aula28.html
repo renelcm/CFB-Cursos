@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CFB Cursos - Javascript</title>
+        <meta charset="UTF-8">
+
+        <!-- Date() - Manipular Data e Hora-->
+
+        <script>
+
+            
+
+            var dt=new Date();
+
+            var ndt=new Date(1978,02,07,10,10,10); //Ano, mes, dia, hora, min, seg, mil
+
+            //ndt.setDate(dt.getDate()+2); //Adicionar ou remover dias
+
+            //ndt.setFullYear(dt.getDate()+5)    *Adicionar ou remover anos*
+
+            var diasem=ndt.getDay();
+            var dia=ndt.getDate();
+            var mes=ndt.getMonth();
+            var ano=ndt.getFullYear();
+
+            var horas=ndt.getHours();
+            var minutos=ndt.getMinutes();
+            var segundos=ndt.getSeconds();
+
+            var meses=new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
+            var semanas=new Array("Domingo","Segunda-Feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sábado");
+
+
+            document.write(semanas[diasem] + ", " + dia + " de " + meses[mes] + " de " + ano + "<br/>");
+            document.write(horas + ":", + minutos + ":", + segundos);
+
+        </script>
+
+    </head>
+    <body>
+    
+
+    </body>
+</html>
